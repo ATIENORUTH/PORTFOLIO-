@@ -1,0 +1,57 @@
+/* src/components/Header.css */
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 15px 0;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  background: transparent;
+}
+
+.navbar.scrolled {
+  background: var(--gold);
+  padding: 10px 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: auto;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.logo span {
+  color: var(--gold);
+}
+
+.navbar.scrolled .logo {
+  color: black;
+}
+
+.navbar nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.navbar.scrolled nav ul li a {
+  color: black;
+}
+
+.navbar nav ul li a:hover {
+  color: var(--gold);
+}
