@@ -14,13 +14,13 @@ const Contact = () => {
 
         <form className="contact-form">
           <div className="form-group">
-            <input type="text" placeholder="joyruth904@gmail.com" required />
+            <input type="text" placeholder="joyruth" required />
           </div>
           <div className="form-group">
-            <input type="email" placeholder="Your Email" required />
+            <input type="email" placeholder="joyruth@gmail.com" required />
           </div>
           <div className="form-group">
-            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <textarea placeholder="Hello" rows="5" required></textarea>
           </div>
           <button type="submit" className="submit-btn">
             Send Message
