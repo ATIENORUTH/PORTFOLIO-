@@ -16,7 +16,7 @@ function Header() {
   return (
     <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container">
-        <div className="logo">RUTH ✨<span>DIGITAL EXPERIENCE</span></div>
+        <div className="logo">RUTH ✨  <span>DIGITAL EXPERIENCE</span></div>
         <nav>
           <ul>
             <li><a href="#hero">Home</a></li>
