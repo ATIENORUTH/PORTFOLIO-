@@ -84,3 +84,14 @@
 .about-image img:hover {
   transform: translateY(-5px) scale(1.05);
 }
+
+/* Increase image size on small screens */
+@media (max-width: 600px) {
+  .about-image {
+    flex: 0 0 280px; /* bigger container */
+  }
+
+  .about-image img {
+    width: 120%; /* make it slightly larger */
+  }
+}
