@@ -25,10 +25,16 @@
   font-size: 1.8rem;
   font-weight: bold;
   color: white;
+  display: flex;          /* allow spacing control */
+  align-items: center;
+  gap: 8px;               /* space between name & tagline */
+  flex-wrap: wrap;        /* allow wrap on small screens */
 }
 
 .logo span {
   color: var(--gold);
+  font-weight: 400;
+  transition: all 0.3s ease;
 }
 
 .navbar.scrolled .logo {
@@ -54,4 +60,18 @@
 
 .navbar nav ul li a:hover {
   color: var(--gold);
+}
+
+/* Mobile view adjustments */
+@media (max-width: 600px) {
+  .logo {
+    flex-direction: column;  /* stack vertically */
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .logo span {
+    font-size: 0.85rem;  /* smaller subtitle */
+    color: #ccc;         /* lighter gray */
+  }
 }
